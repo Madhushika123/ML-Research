@@ -1,0 +1,268 @@
+{% extends 'base.html' %}
+{% block pagetitle %}
+Cosmetics Identification System
+{% endblock pagetitle %}
+{% block body %}
+<style>
+  body{
+    overflow-x: hidden;
+  }
+  @media only screen and (max-width: 830px) {
+    .laptop{
+      display: none;
+    }
+  }
+  @media (min-width:830px) and (max-width: 1536px){
+    .mobile{
+      display: none;
+    }
+  }
+</style>
+<div class='mobile p-5'>
+  <div class="row mb-5 text-center text-white">
+    <div class="col-lg-10 mx-auto">
+      <h1 class="display-4" style="padding-top: 2%;font-weight: 400;color:red;"><b>Note✍🏻</b></h1>
+      <p class="lead" style="font-weight: 500;color: black;">Please🙏 Open This Site On Laptop/PC 💻 Screen Only</p>
+      <p class="lead" style="font-weight: 500;color: black;">Thank You 🤝</p>    
+    </div>
+</div>
+</div>
+
+<div class="row mb-5 text-center text-white laptop">
+    <div class="col-lg-10 mx-auto">
+        <h1 class="display-4" style="padding-top: 2%;font-weight: 400;color: rgb(4, 54, 4);"><b>🛒Cosmetics Items🛒</b></h1>
+        <p class="lead" style="font-weight: 700;color: black;">Buy Beauty & Cosmetics Items at one place</p>
+        
+    </div>
+</div>
+
+
+
+<div class="row p-5 laptop">
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+          <img src="https://www.fresh.com/dw/image/v2/BDJQ_PRD/on/demandware.static/-/Sites-fresh_master_catalog/default/dw4a66f75c/product_images/H00005361_main_pdp.jpg?sw=1350&sh=900&bgcolor=F7F7F8&sfrm=jpg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Lotus Antioxidant Daily Moisturizer, 50Ml | Skincare </p>
+            <a target="_blank" href={{buy[index]}}><button type="button" class="btn btn-success"
+                style="background-color: #900C3F;">Buy Product</button></a>
+        </center>
+          
+        </div>
+    </div>
+    <div class="col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://www.cetaphil.com/dw/image/v2/BGGN_PRD/on/demandware.static/-/Library-Sites-RefArchSharedLibrary/default/dwea52d1ea/2023FEB/MOISTURIZERS_m.jpg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Nourishing Moisturizers for Sensitive Skin | Cetaphil US</p>
+            <a target="_blank" href={{buy[index]}}><button type="button" class="btn btn-success"
+                style="background-color: #900C3F;">Buy Product</button></a>
+        </center>
+        </div>
+    </div>
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://www.lancome-usa.com/on/demandware.static/-/Sites-lancome-us-master-catalog/default/dw92398803/pdp/1000397/D0449331%20-%20LNCM%20-%20HYDRA%20ZEN%20PACKSHOT%20-%201000%20x%201000.jpg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Hydra Zen Gel Cream - Moisturizers - Skincare - Lancôme</p>
+            <a target="_blank" href={{buy[index]}}><button type="button" class="btn btn-success"
+                style="background-color: #900C3F;">Buy Product</button></a>
+        </center>
+        </div>
+    </div>
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQI1rGDF-usJya0K56X0GW8J-iklnI8gvPsQ&usqp=CAU" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">POND'S Dry Skin Cream The Mass Facial Moisturizer</p>
+            <a target="_blank" href={{buy[index]}}><button type="button" class="btn btn-success"
+                style="background-color: #900C3F;">Buy Product</button></a>
+        </center>
+        </div>
+    </div>
+</div>
+
+<div class="row p-5 laptop">
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+          <img src="https://m.media-amazon.com/images/I/51bXoP3dfFL._AC_.jpg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Peach Pink Eyeshadow Palette, DE'LANCI Professional Matte Shimmer</p>
+            <a target="_blank" href={{buy[index]}}><button type="button" class="btn btn-success"
+                style="background-color: #900C3F;">Buy Product</button></a>
+        </center>
+          
+        </div>
+    </div>
+    <div class="col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBmv6F_LwF5v6kf3quN1K2SEdAMkHyhuSo8w&usqp=CAU" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Vintage Christian Dior 5 couleurs 810 eyeshadow Dior makeup eyeshadow, Dior, Christian dior </p>
+            <a target="_blank" href={{buy[index]}}><button type="button" class="btn btn-success"
+                style="background-color: #900C3F;">Buy Product</button></a>
+        </center>
+        </div>
+    </div>
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://m.media-amazon.com/images/I/51Tc-fje9aL._AC_UF350,350_QL50_.jpg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Glowhouse 18 colors nude and Rose gold eyeshadow palette,Black color hello kitty makeup</p>
+            <a target="_blank" href={{buy[index]}}><button type="button" class="btn btn-success"
+                style="background-color: #900C3F;">Buy Product</button></a>
+        </center>
+        </div>
+    </div>
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://images-eu.ssl-images-amazon.com/images/I/71S9hbwqzDL._AC_UL600_SR600,600_.jpg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Buy BR Travel Size Eyeshadow Makeup Kit 0.5 Oz Online at Low Prices in India</p>
+            <a target="_blank" href={{buy[index]}}><button type="button" class="btn btn-success"
+                style="background-color: #900C3F;">Buy Product</button></a>
+        </center>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="row p-5 laptop">
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+          <img src="https://www.cleanandclear.com/sites/cleanandclear_us/files/styles/square_440/public/product-thumbnails/thumb-transpmorningpersabundle.png" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Face Cleansers & Scrubs for Acne | Clean & Clear</p>
+            <a target="_blank" href={{buy[index]}}><button type="button" class="btn btn-success"
+                style="background-color: #900C3F;">Buy Product</button></a>
+        </center>
+        </div>
+    </div>
+    <div class="col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://www.stives.com/wp-content/uploads/sites/2/2021/07/x1498925-Creative-Development-PDPs-4x-update-205x453_NEW2_Acne.png,qx43170.pagespeed.ic.Nh-ypc2y3s.png" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Acne Control Tea Tree Facial Cleanser</p>
+            <a target="_blank" href={{buy[index]}}><button type="button" class="btn btn-success"
+                style="background-color: #900C3F;">Buy Product</button></a>
+        </center>
+        </div>
+    </div>
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQutDCc_EcPcMypGwBjxfAEsFm2arPMPccFFQ&usqp=CAU">
+          <center><p class="lead" style="font-weight: 500;color: black;">Deep Clean Facial Cleanser | Neutrogena </p>
+            <a target="_blank" href={{buy[index]}}><button type="button" class="btn btn-success"
+                style="background-color: #900C3F;">Buy Product</button></a>
+        </center>
+        </div>
+    </div>
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1684413685-11429067-2674909337809275.jpg?crop=1xw:1.00xh;center,top&resize=980:*" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">13 Best Salicylic Acid Cleansers In 2023</p>
+            <a target="_blank" href={{buy[index]}}><button type="button" class="btn btn-success"
+                style="background-color: #900C3F;">Buy Product</button></a>
+        </center>
+        </div>
+    </div>
+</div>
+
+<div class="row p-5 laptop">
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+          <img src="https://m.esteelauder.co.uk/media/export/cms/products/640x640/el_sku_GRFT05_640x640_0.jpg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Pure Color Creme Lipstick, Red color Quality one sticks </p>
+            <a target="_blank" href={{buy[index]}}><button type="button" class="btn btn-success"
+                style="background-color: #900C3F;">Buy Product</button></a>
+        </center>
+          
+        </div>
+    </div>
+    <div class="col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://cdn0.hitched.co.uk/article/6011/3_2/1280/png/111106-wedding-lipsticks.webp" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">The Best Wedding Lipsticks: 21 Tried & Tested Bridal Lipsticks</p>
+            <a target="_blank" href={{buy[index]}}><button type="button" class="btn btn-success"
+                style="background-color: #900C3F;">Buy Product</button></a>
+        </center>
+        </div>
+    </div>
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://hips.hearstapps.com/hmg-prod/images/hbz-lipstick-index2-1572980853.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Best Lipsticks for Winter 2020 - Best Holiday Lip Colors</p>
+            <a target="_blank" href={{buy[index]}}><button type="button" class="btn btn-success"
+                style="background-color: #900C3F;">Buy Product</button></a>
+        </center>
+        </div>
+    </div>
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://www.beautycrew.com.au/media/55855/4.png?width=675" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">The Best Liquid Lipsticks In Australia | BEAUTY/crew</p>
+            <a target="_blank" href={{buy[index]}}><button type="button" class="btn btn-success"
+                style="background-color: #900C3F;">Buy Product</button></a>
+        </center>
+        </div>
+    </div>
+</div>
+
+<div class="row p-5 laptop">
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+          <img src="https://static.eau-thermale-avene.com/sites/files-nz/styles/149x180/public/images/product/image/emulsion_spf50.png?itok=MN2DUVnA" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Fancypoint (pvt) ltd | your accessories & cosmetics</p>
+            <a target="_blank" href={{buy[index]}}><button type="button" class="btn btn-success"
+                style="background-color: #900C3F;">Buy Product</button></a>
+        </center>
+          
+        </div>
+    </div>
+    <div class="col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://img3.exportersindia.com/product_images/bc-small/2021/10/4579189/sun-protect-cream-1634367053-6039085.jpeg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Sun Protection Cream | Sun protective UV |SPF 30 | 100 ml</p>
+            <a target="_blank" href={{buy[index]}}><button type="button" class="btn btn-success"
+                style="background-color: #900C3F;">Buy Product</button></a>
+        </center>
+        </div>
+    </div>
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://static.eau-thermale-avene.com/sites/files-nz/styles/149x180/public/images/product/image/emulsion_spf50.png?itok=MN2DUVnA" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Sun Protection cream, Sunscream emulsion | SPF 50</p>
+            <a target="_blank" href={{buy[index]}}><button type="button" class="btn btn-success"
+                style="background-color: #900C3F;">Buy Product</button></a>
+        </center>
+        </div>
+    </div>
+    <div class=" col">
+        <div class="p-3 bg-white shadow rounded-lg" style="width: 90%;height: 92%;">
+
+          <img src="https://objectstorage.ap-mumbai-1.oraclecloud.com/n/softlogicbicloud/b/cdn/o/products/111447--01--1555682132.jpeg" width="250" height="250">
+          <center><p class="lead" style="font-weight: 500;color: black;">Nature'S Secret Sunscreen Moisturising Lotion Sun & Fun Spf25</p>
+            <a target="_blank" href={{buy[index]}}><button type="button" class="btn btn-success"
+                style="background-color: #900C3F;">Buy Product</button></a>
+        </center>
+        </div>
+    </div>
+</div>
+
+
+
+    
+    
+    </div>
+</div>
+
+
+
+{% endblock body %}
+
+

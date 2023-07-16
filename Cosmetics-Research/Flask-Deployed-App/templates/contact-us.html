@@ -1,0 +1,192 @@
+{% extends 'base.html' %}
+{% block pagetitle %}
+Contact Us
+{% endblock pagetitle %}
+
+{% block body %}
+
+
+<div class="row mb-5 text-center text-white laptop">
+    <div class="col-lg-10 mx-auto">
+        <h1 class="display-4" style="padding-top: 2%;font-weight: 400;color: rgb(4, 54, 4);"><b>📞Contact-Us📞</b></h1>
+        <p class="lead" style="font-weight: 700;color: black;">For Any Queries & Suggestions Contact Us. We Are Happy To
+            Help.</p>
+            <p class="lead" style="font-weight: 500;color: black;">At High Care Cosmetics Company, we believe that beauty is more than just skin deep. 
+                We are dedicated to providing high-quality cosmetics and skincare products that not only enhance your natural beauty but also nourish and care for your skin. 
+                Our mission is to empower individuals to embrace their uniqueness and express themselves confidently through our exceptional range of beauty products.</p>
+    </div>
+</div>
+
+<html>
+<head>
+    
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .container {
+      max-width: 500px;
+      margin-top: -1200px;
+      margin-left: 800px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+      
+    }
+    .form-group label {
+        display: block;
+        background-color: pink;
+        color: black;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+    .form-group input[type="text"],
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .form-group textarea {
+      height: 170px;
+    }
+    .form-group button {
+      background-color: #900C3F;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .form-group button:hover {
+      background-color: #CD1076;
+    }
+    .success-message {
+      color: white;
+      margin-top: 10px;
+    }
+    .error-message {
+      color: red;
+      margin-top: 10px;
+    }
+    .main-text{
+        display: flex;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .services-content{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+      
+        gap: 2.5rem;
+        margin-top: 5rem;
+        margin-top: -100px;
+    }
+    .box{
+        position: relative;
+        background: #FFC0CB ;
+        padding: 35px 45px;
+        border-radius: 8px;
+        width: 650px;
+        height: 450px;
+        margin-top: 100px;
+        margin-left: 100px;
+        margin-bottom: 750px;
+        transition: all .45s ease;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="services-content">
+        <div class="box">
+            
+            
+                <div>
+                    <h5>Social Media Handles :</h5><br>
+                    <a target="_blank" href='mailto:bhikadiyamanthan@gmail.com'><img
+                            src="https://cdn-icons-png.flaticon.com/512/3178/3178158.png" height="40" width="40"></a> :
+                            highcare89672@gmail.com<br><br>
+                    <a target="_blank" href='manthan-bhikadiya.medium.com'><img
+                            src="https://cdn-icons-png.flaticon.com/512/4401/4401407.png" height="40"
+                            width="40"></a> : https://www.instagram.com/highcare/<br><br>
+                    <a target="_blank" href='https://github.com/manthan89-py'><img
+                            src="https://cdn.freebiesupply.com/logos/large/2x/github-icon-logo-black-and-white.png" height="40" width="40"></a> :
+                            https://github.com/highcare-py<br><br>
+                    <a target="_blank" href='https://www.linkedin.com/in/manthanbhikadiya'><img
+                            src="https://icones.pro/wp-content/uploads/2021/03/icone-linkedin-ronde-noire.png" height="40" width="40"></a> :
+                            https://www.linkedin.com/in/highcare<br><br>
+
+                    <a target="_blank" href='https://www.linkedin.com/in/manthanbhikadiya'><img
+                            src="https://cdn-icons-png.flaticon.com/512/455/455705.png" height="40" width="40"></a> :
+                            0117856956 / 0325258975<br>        
+    
+                </div>
+        </div>
+    </div>
+
+  <div class="container">
+    
+    <div id="contact-form">
+      <form id="contact-us-form">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="text" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Write Your Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+      <div id="response" class="success-message"></div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("contact-us-form").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent form submission
+      
+      // Fetch form data
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+      
+      // Validate form data
+      if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
+        document.getElementById("response").className = "error-message";
+        document.getElementById("response").innerHTML = "Please fill in all fields.";
+      } else {
+        // TODO: Perform further processing (e.g., send email or save data)
+        
+        // Display success message
+        document.getElementById("response").className = "success-message";
+        document.getElementById("response").innerHTML = "Thank you! Your message has been sent.";
+        
+        // Reset form
+        document.getElementById("contact-us-form").reset();
+      }
+    });
+  </script>
+</body>
+</html>
+
+    
+</div>
+
+{% endblock body %}

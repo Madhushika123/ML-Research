@@ -1,0 +1,92 @@
+<html>
+{% extends 'base.html' %}
+{% block pagetitle %}
+AI Engine
+{% endblock pagetitle %}
+
+{% block body %}
+<div>
+    <div class="container">
+        <!-- For demo purpose -->
+        <div class="row mb-5 text-center text-white">
+            <div class="col-lg-10 mx-auto">
+                <h1 class="display-4" style="padding-top: 2%;font-weight: 400;color: rgb(4, 54, 4);"><b>AI Engine</b></h1>
+                <p class="lead" style="font-weight: 500;color: black;">Let AI Engine Will Help You To Identify Best Cosmetics Products</p>
+            </div>
+        </div>
+        <!-- End -->
+        <div class="row ">
+            <div class="col mx-auto">
+                <div class="p-5 bg-white shadow rounded-lg" style="height: 95%;">
+
+                    <h5><b>Why is it necessary to identify cosmetics products? </b></h5>
+                    <p>Safety and Health: Proper identification of cosmetics products helps ensure the safety and health of consumers. 
+                        By knowing the specific ingredients and components of a product, 
+                        individuals can make informed choices and avoid potential allergens or substances that may cause adverse reactions.
+                    </p>
+
+                    <p>
+                        Quality Assurance: Proper identification is crucial for quality control purposes. 
+                        It allows manufacturers to track and monitor the production, distribution, and sale of their cosmetics products. Identification systems such as batch numbers or lot codes help in identifying specific batches or production runs, 
+                        enabling efficient traceability in case of product recalls or quality issues.
+                    </p>
+                </div>
+            </div>
+            <div class="col mx-auto">
+                <div class="p-5 bg-white shadow rounded-lg" style="height: 95%;"><img
+                        src="https://static8.depositphotos.com/1007520/876/v/600/depositphotos_8765111-stock-illustration-portrait-of-beautiful-woman-with.jpg "
+                        height="300" alt="" width="200" class="d-block mx-auto mb-4 rounded-pill">
+
+                    <!-- Default bootstrap file upload-->
+
+                    <form action="/submit" method="POST" enctype="multipart/form-data">
+                        <div class="custom-file overflow-hidden mb-4">
+                            <input type="file" id="actual-btn" hidden name="image" />
+                            <label for="actual-btn" background-color='#900C3F'>Choose File</label>
+                            <span id="file-chosen">No file chosen</span>
+                        </div>
+
+                        <!-- End -->
+
+                        <h6 class="text-center mb-4 text-muted">
+                            Simply upload your cosmetics item image and then see the magic of AI.
+                        </h6>
+
+                        <!-- Custom bootstrap upload file-->
+                        <center>
+                            <a class="mx-2"><button type="submit" class="btn btn-outline-success">Submit</button></a>
+                        </center>
+                    </form>
+                    <!-- End -->
+
+                </div>
+            </div>
+            <div class="col mx-auto">
+                <div class="p-5 bg-white shadow rounded-lg" style="height: 95%;">
+                    <h5><b>Why should we choose a best cosmetics product?</b></h5>
+                    <ol>
+                        <li>The best cosmetics products undergo rigorous testing and adhere to safety standards, minimizing the risk of adverse reactions or health concerns.</li>
+                        <li>High-quality cosmetics products are formulated with superior ingredients and advanced technology, providing optimal performance and desired results.</li>
+                        <li>The best cosmetics products are scientifically formulated and proven to be effective in addressing specific concerns, increasing the likelihood of achieving desired outcomes.</li>
+                        <li>Choosing the best cosmetics product ensures compatibility with your skin type and concerns, reducing the risk of irritation or adverse reactions.</li>
+                        
+                    </ol>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const actualBtn = document.getElementById('actual-btn');
+
+    const fileChosen = document.getElementById('file-chosen');
+
+    actualBtn.addEventListener('change', function () {
+        fileChosen.textContent = this.files[0].name
+    })
+</script>
+
+
+{% endblock body %}
